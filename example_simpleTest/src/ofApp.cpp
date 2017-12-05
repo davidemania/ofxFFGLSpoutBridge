@@ -41,7 +41,8 @@ void ofApp::setup()
 	shareName = "FFGLSpoutBridge";
 	spoutBridge.initialize(shareName, ofGetWidth(), ofGetHeight());
 
-	oscReceiver.setup(OSC_PORT);
+	currentOscPort = OSC_PORT;
+	oscReceiver.setup(currentOscPort);
 
 	font.load("Arial", 45);
 	currentHue = 0.0;
@@ -138,7 +139,27 @@ void ofApp::draw()
 
 void ofApp::keyPressed(int key)
 {
+	if (key == 'n')
+	{
+		string result = ofSystemTextBoxDialog("Current Spout share name", shareName);
+		
+		if (result != shareName)
+		{
+			shareName = result;
 
+			spoutBridge.initialize(shareName, ofGetWidth(), ofGetHeight());
+		}
+	}
+	else if (key == 'p')
+	{
+		string result = ofSystemTextBoxDialog("Current OSC port", ofToString(currentOscPort));
+		
+		if (result != ofToString(currentOscPort))
+		{
+			currentOscPort = ofToInt(result);
+			oscReceiver.setup(currentOscPort);
+		}
+	}
 }
 
 //******************************************************************

@@ -96,13 +96,8 @@
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxFFGLSpoutBridge\libs;..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK;..\..\..\addons\ofxFFGLSpoutBridge\src;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\src;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxFFGLSpoutBridge\libs;..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK;..\..\..\addons\ofxFFGLSpoutBridge\src;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\src;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;
+C:\Development\of_v0.9.8_vs_release\addons\ofxGui\src</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -120,13 +115,8 @@ C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc</Addition
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxFFGLSpoutBridge\libs;..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK;..\..\..\addons\ofxFFGLSpoutBridge\src;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\src;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxFFGLSpoutBridge\libs;..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK;..\..\..\addons\ofxFFGLSpoutBridge\src;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\src;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;
+C:\Development\of_v0.9.8_vs_release\addons\ofxGui\src</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
@@ -144,13 +134,8 @@ C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc</Addition
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxFFGLSpoutBridge\libs;..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK;..\..\..\addons\ofxFFGLSpoutBridge\src;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\src;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxFFGLSpoutBridge\libs;..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK;..\..\..\addons\ofxFFGLSpoutBridge\src;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\src;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;
+C:\Development\of_v0.9.8_vs_release\addons\ofxGui\src</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
       <MultiProcessorCompilation>true</MultiProcessorCompilation>
     </ClCompile>
@@ -171,13 +156,8 @@ C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc</Addition
       <PreprocessorDefinitions>%(PreprocessorDefinitions)</PreprocessorDefinitions>
       <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
       <WarningLevel>Level3</WarningLevel>
-      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxFFGLSpoutBridge\libs;..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK;..\..\..\addons\ofxFFGLSpoutBridge\src;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\src;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;
-C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories);..\..\..\addons\ofxFFGLSpoutBridge\libs;..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK;..\..\..\addons\ofxFFGLSpoutBridge\src;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\src;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\posix;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\ip\win32;C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc;
+C:\Development\of_v0.9.8_vs_release\addons\ofxGui\src</AdditionalIncludeDirectories>
       <CompileAs>CompileAsCpp</CompileAs>
     </ClCompile>
     <Link>
@@ -192,6 +172,14 @@ C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc</Addition
     <PostBuildEvent />
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\ofxGui\src\ofxBaseGui.cpp" />
+    <ClCompile Include="..\..\ofxGui\src\ofxButton.cpp" />
+    <ClCompile Include="..\..\ofxGui\src\ofxGuiGroup.cpp" />
+    <ClCompile Include="..\..\ofxGui\src\ofxLabel.cpp" />
+    <ClCompile Include="..\..\ofxGui\src\ofxPanel.cpp" />
+    <ClCompile Include="..\..\ofxGui\src\ofxSlider.cpp" />
+    <ClCompile Include="..\..\ofxGui\src\ofxSliderGroup.cpp" />
+    <ClCompile Include="..\..\ofxGui\src\ofxToggle.cpp" />
     <ClCompile Include="..\..\ofxOsc\libs\oscpack\src\ip\IpEndpointName.cpp" />
     <ClCompile Include="..\..\ofxOsc\libs\oscpack\src\ip\win32\NetworkingUtils.cpp" />
     <ClCompile Include="..\..\ofxOsc\libs\oscpack\src\ip\win32\UdpSocket.cpp" />
@@ -220,6 +208,15 @@ C:\Development\of_v0.9.8_vs_release\addons\ofxOsc\libs\oscpack\src\osc</Addition
     <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSharedMemory.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\ofxGui\src\ofxBaseGui.h" />
+    <ClInclude Include="..\..\ofxGui\src\ofxButton.h" />
+    <ClInclude Include="..\..\ofxGui\src\ofxGui.h" />
+    <ClInclude Include="..\..\ofxGui\src\ofxGuiGroup.h" />
+    <ClInclude Include="..\..\ofxGui\src\ofxLabel.h" />
+    <ClInclude Include="..\..\ofxGui\src\ofxPanel.h" />
+    <ClInclude Include="..\..\ofxGui\src\ofxSlider.h" />
+    <ClInclude Include="..\..\ofxGui\src\ofxSliderGroup.h" />
+    <ClInclude Include="..\..\ofxGui\src\ofxToggle.h" />
     <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\ip\IpEndpointName.h" />
     <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\ip\NetworkingUtils.h" />
     <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\ip\PacketListener.h" />

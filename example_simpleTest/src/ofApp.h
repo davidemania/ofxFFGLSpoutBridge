@@ -48,6 +48,7 @@ public:
 private:
 	ofxFFGLSpoutBridge spoutBridge;
 	string shareName;
+	int currentOscPort;
 
 	ofxOscReceiver oscReceiver;
 

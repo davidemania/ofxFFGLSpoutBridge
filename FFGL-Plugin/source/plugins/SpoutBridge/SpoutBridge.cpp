@@ -61,6 +61,7 @@
 #define FFPARAM_MOVE_Y	 (1)
 #define FFPARAM_ROTATE	 (2)
 #define FFPARAM_SHARING_NAME (3)
+#define FFPARAM_OSC_PORT (4)
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////
 //  Plugin information
@@ -83,8 +84,7 @@ FFGLSpoutBridge::FFGLSpoutBridge()
 	:CFreeFrameGLPlugin(),
 	m_initResources(1),
 	m_inputTextureLocation(-1),
-	m_BrightnessLocation(-1),
-	transmitSocket(IpEndpointName(OSC_ADDRESS, OSC_PORT))
+	m_BrightnessLocation(-1)
 {
 	// Input properties
 	SetMinInputs(1);
@@ -102,6 +102,11 @@ FFGLSpoutBridge::FFGLSpoutBridge()
 
 	SetParamInfo(FFPARAM_SHARING_NAME, "Name", FF_TYPE_TEXT, defaultName);
 	strcpy(currentName, defaultName);
+
+	SetParamInfo(FFPARAM_OSC_PORT, "OSC Port", FF_TYPE_TEXT, OSC_DEFAULT_PORT);
+	currentOscPort = atoi(OSC_DEFAULT_PORT);
+
+	transmitSocket = new UdpTransmitSocket(IpEndpointName(OSC_ADDRESS, atoi(OSC_DEFAULT_PORT)));
 
 	spoutSenderIsInitialized = spoutReceiverIsInitialized = false;
 
@@ -314,6 +319,14 @@ FFResult FFGLSpoutBridge::SetTextParameter(unsigned int dwIndex, const char *val
 			sharingNameHasChanged = true;
 		}
 		break;
+	case FFPARAM_OSC_PORT:
+		if (atoi(value) != currentOscPort)
+		{
+			//delete transmitSocket;
+			//transmitSocket = new UdpTransmitSocket(IpEndpointName(OSC_ADDRESS, atoi(value)));
+			currentOscPort = atoi(value);
+		}
+		break;
 	}
 
 	return FF_SUCCESS;
@@ -326,10 +339,16 @@ FFResult FFGLSpoutBridge::SetTextParameter(unsigned int dwIndex, const char *val
 
 char* FFGLSpoutBridge::GetTextParameter(unsigned int dwIndex)
 {
+	static char buf[32];
+	
 	switch (dwIndex)
 	{
 	case FFPARAM_SHARING_NAME:
 		return spoutName;
+	case FFPARAM_OSC_PORT:
+		string s = std::to_string(currentOscPort);
+		strcpy(buf, s.c_str());
+		return buf;
 	}
 }
 
@@ -384,7 +403,7 @@ FFResult FFGLSpoutBridge::SetFloatParameter(unsigned int dwIndex, float value)
 	osc::OutboundPacketStream packet(oscBuffer, OUTPUT_BUFFER_SIZE);
 	packet << osc::BeginMessage(address.c_str()) << moveX << moveY << rotate << osc::EndMessage;
 
-	transmitSocket.Send(packet.Data(), packet.Size());
+	transmitSocket->SendTo(IpEndpointName(OSC_ADDRESS, currentOscPort), packet.Data(), packet.Size());
 
 	return FF_SUCCESS;
 }

@@ -64,7 +64,7 @@
 #include "ip/UdpSocket.h"
 
 #define OSC_ADDRESS "127.0.0.1"
-#define OSC_PORT 7251
+#define OSC_DEFAULT_PORT "7251"
 
 #define OUTPUT_BUFFER_SIZE 1024
 
@@ -144,6 +144,7 @@ protected:
 	char debugBuffer[512];
 	//char spoutSharingName[512];
 
-	UdpTransmitSocket transmitSocket;
+	UdpTransmitSocket* transmitSocket;
 	char oscBuffer[OUTPUT_BUFFER_SIZE];
+	int currentOscPort;
 };

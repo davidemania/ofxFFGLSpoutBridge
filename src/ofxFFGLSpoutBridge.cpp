@@ -52,9 +52,18 @@ void ofxFFGLSpoutBridge::initialize(string bridgeName, int width, int height, bo
 	frameWidth = width;
 	frameHeight = height;
 
+	if (bufferFbo.isAllocated())
+	{
+		bufferFbo.clear();
+	}
+
 	bufferFbo.allocate(width, height, GL_RGBA);
 
 	spoutSenderIsInitialized = spoutReceiverIsInitialized = false;
+
+	// Just in case. Will do nothing if receiver and sender are not active
+	spoutReceiver.ReleaseReceiver();
+	spoutSender.ReleaseSender();
 
 	flipReceivedTexture = flipReceive;
 	flipTextureToSend = flipSend;
