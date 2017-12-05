@@ -1,117 +1,237 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-	<ItemGroup>
-		<ClCompile Include="src\ofApp.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
-		<ClCompile Include="src\main.cpp">
-			<Filter>src</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\src\ofxFFGLSpoutBridge.cpp">
-			<Filter>addons\ofxFFGLSpoutBridge\src</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutCopy.cpp">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutDirectX.cpp">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutGLDXinterop.cpp">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutGLextensions.cpp">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutMemoryShare.cpp">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutReceiver.cpp">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSDK.cpp">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSender.cpp">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSenderMemory.cpp">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSenderNames.cpp">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClCompile>
-		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSharedMemory.cpp">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClCompile>
-	</ItemGroup>
-	<ItemGroup>
-		<Filter Include="src">
-			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons">
-			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxFFGLSpoutBridge">
-			<UniqueIdentifier>{F6939A6C-14D3-3AAD-7460-869C}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxFFGLSpoutBridge\src">
-			<UniqueIdentifier>{092C9149-2FFA-C10D-CE52-719A}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxFFGLSpoutBridge\libs">
-			<UniqueIdentifier>{E75116DD-99F1-2D09-3A33-4C2D}</UniqueIdentifier>
-		</Filter>
-		<Filter Include="addons\ofxFFGLSpoutBridge\libs\spoutSDK">
-			<UniqueIdentifier>{27FB58AE-021F-7AD4-9836-3799}</UniqueIdentifier>
-		</Filter>
-	</ItemGroup>
-	<ItemGroup>
-		<ClInclude Include="src\ofApp.h">
-			<Filter>src</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\src\ofxFFGLSpoutBridge.h">
-			<Filter>addons\ofxFFGLSpoutBridge\src</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\Spout.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutCommon.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutCopy.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutDirectX.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutGLDXinterop.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutGLextensions.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutMemoryShare.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutReceiver.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSDK.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSender.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSenderMemory.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSenderNames.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSharedMemory.h">
-			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
-		</ClInclude>
-	</ItemGroup>
-	<ItemGroup>
-		<ResourceCompile Include="icon.rc" />
-	</ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="src\ofApp.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="src\main.cpp">
+      <Filter>src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\src\ofxFFGLSpoutBridge.cpp">
+      <Filter>addons\ofxFFGLSpoutBridge\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutCopy.cpp">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutDirectX.cpp">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutGLDXinterop.cpp">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutGLextensions.cpp">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutMemoryShare.cpp">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutReceiver.cpp">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSDK.cpp">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSender.cpp">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSenderMemory.cpp">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSenderNames.cpp">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSharedMemory.cpp">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxOsc\src\ofxOscBundle.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxOsc\src\ofxOscMessage.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxOsc\src\ofxOscParameterSync.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxOsc\src\ofxOscReceiver.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxOsc\src\ofxOscSender.cpp">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxOsc\libs\oscpack\src\ip\IpEndpointName.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxOsc\libs\oscpack\src\ip\win32\NetworkingUtils.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxOsc\libs\oscpack\src\ip\win32\UdpSocket.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip\win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\ofxOsc\libs\oscpack\src\osc\OscTypes.cpp">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="src">
+      <UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons">
+      <UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFFGLSpoutBridge">
+      <UniqueIdentifier>{F6939A6C-14D3-3AAD-7460-869C}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFFGLSpoutBridge\src">
+      <UniqueIdentifier>{092C9149-2FFA-C10D-CE52-719A}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFFGLSpoutBridge\libs">
+      <UniqueIdentifier>{E75116DD-99F1-2D09-3A33-4C2D}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxFFGLSpoutBridge\libs\spoutSDK">
+      <UniqueIdentifier>{27FB58AE-021F-7AD4-9836-3799}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc">
+      <UniqueIdentifier>{f4ff0e00-29f9-49ef-9d0f-fa9e9d73d873}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\src">
+      <UniqueIdentifier>{de6750d6-6c35-4768-8fea-68b3a91435d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs">
+      <UniqueIdentifier>{cc535838-272b-4958-a0ed-675d49c23fb3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack">
+      <UniqueIdentifier>{53e076f6-7326-4ab5-bbbb-124338336a2e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src">
+      <UniqueIdentifier>{09156296-3176-439d-af1c-0303019aaf6b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src\ip">
+      <UniqueIdentifier>{1286d3b5-49b9-482d-96a6-645371b98064}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src\ip\win32">
+      <UniqueIdentifier>{3f0ed328-7ecb-45b1-a390-e99777911ca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="addons\ofxOsc\libs\oscpack\src\osc">
+      <UniqueIdentifier>{57f5df6c-b4f0-4502-a23e-90419df02da9}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="src\ofApp.h">
+      <Filter>src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\src\ofxFFGLSpoutBridge.h">
+      <Filter>addons\ofxFFGLSpoutBridge\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\Spout.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutCommon.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutCopy.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutDirectX.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutGLDXinterop.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutGLextensions.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutMemoryShare.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutReceiver.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSDK.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSender.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSenderMemory.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSenderNames.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSharedMemory.h">
+      <Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\src\ofxOsc.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\src\ofxOscArg.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\src\ofxOscBundle.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\src\ofxOscMessage.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\src\ofxOscParameterSync.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\src\ofxOscReceiver.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\src\ofxOscSender.h">
+      <Filter>addons\ofxOsc\src</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\ip\IpEndpointName.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\ip\NetworkingUtils.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\ip\PacketListener.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\ip\TimerListener.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\ip\UdpSocket.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\ip</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\osc\MessageMappingOscPacketListener.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\osc\OscException.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\osc\OscHostEndianness.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\osc\OscOutboundPacketStream.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\osc\OscPacketListener.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\osc\OscPrintReceivedElements.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\osc\OscReceivedElements.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\ofxOsc\libs\oscpack\src\osc\OscTypes.h">
+      <Filter>addons\ofxOsc\libs\oscpack\src\osc</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="icon.rc" />
+  </ItemGroup>
 </Project>

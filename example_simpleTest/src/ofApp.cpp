@@ -29,6 +29,8 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 #include "ofApp.h"
 
+#define OSC_PORT 7251
+
 //******************************************************************
 //******************************************************************
 
@@ -36,10 +38,16 @@ void ofApp::setup()
 {
 	ofSetWindowTitle("FFGLSpoutBridge example");
 
-	spoutBridge.initialize("FFGLSpoutBridge", ofGetWidth(), ofGetHeight());
+	shareName = "FFGLSpoutBridge";
+	spoutBridge.initialize(shareName, ofGetWidth(), ofGetHeight());
+
+	oscReceiver.setup(OSC_PORT);
 
 	font.load("Arial", 45);
 	currentHue = 0.0;
+	currentParameterX = currentParameterY = currentParameterRotate = 0;
+
+	ofEnableSmoothing();
 }
 
 //******************************************************************
@@ -47,7 +55,22 @@ void ofApp::setup()
 
 void ofApp::update()
 {
+	// check for waiting osc messages
+	while (oscReceiver.hasWaitingMessages())
+	{
+		// get the next message
+		ofxOscMessage message;
+		oscReceiver.getNextMessage(message);
 
+		// is this message meant for us?
+		if (message.getAddress() == "/" + shareName)
+		{
+			// we have three floats waiting for us
+			currentParameterX = message.getArgAsFloat(0);
+			currentParameterY = message.getArgAsFloat(1);
+			currentParameterRotate = message.getArgAsFloat(2);
+		}
+	}
 }
 
 //******************************************************************
@@ -80,8 +103,27 @@ void ofApp::draw()
 		}
 
 		ofPushStyle();
+
+		ofSetColor(ofColor::lightYellow);
+		ofPushMatrix();
+			float deltaX = ofMap(currentParameterX, 0.0, 1.0, -sharedFbo.getWidth() / 2, sharedFbo.getWidth() / 2);
+			float deltaY = ofMap(currentParameterY, 0.0, 1.0, -sharedFbo.getHeight() / 2, sharedFbo.getHeight() / 2);
+			float angleDeg = ofMap(currentParameterRotate, 0.0, 1.0, -180, 180);
+
+			ofTranslate(sharedFbo.getWidth() / 2 + deltaX, sharedFbo.getHeight() / 2 + deltaY);
+			ofRotate(angleDeg);
+
+			ofFill();
+			ofDrawTriangle(-30, 70, 30, 70, 0, -70);
+			ofNoFill();
+			ofSetColor(ofColor::red);
+			ofSetLineWidth(3);
+			ofDrawTriangle(-30, 70, 30, 70, 0, -70);
+		ofPopMatrix();
+
 		ofSetColor(ofColor().fromHsb(currentHue, 192, 255));
 		font.drawString(msg, x, y);
+
 		ofPopStyle();
 
 	sharedFbo.end();

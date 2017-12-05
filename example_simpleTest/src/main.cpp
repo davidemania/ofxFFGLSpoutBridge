@@ -36,7 +36,7 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 int main( )
 {
 	// setup the GL context
-	ofSetupOpenGL(1024,576,OF_WINDOW);			
+	ofSetupOpenGL(720, 480, OF_WINDOW);			
 
 	// this kicks off the running of my app
 	// can be OF_WINDOW or OF_FULLSCREEN

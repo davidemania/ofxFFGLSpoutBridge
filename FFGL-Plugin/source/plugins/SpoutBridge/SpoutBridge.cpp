@@ -334,6 +334,8 @@ char* FFGLSpoutBridge::GetTextParameter(unsigned int dwIndex)
 }
 
 //**********************************************************************************
+// An OSC receiver could be implemented here to read data from client and reflect
+// changes to host.
 //**********************************************************************************
 
 float FFGLSpoutBridge::GetFloatParameter(unsigned int dwIndex)
@@ -377,14 +379,10 @@ FFResult FFGLSpoutBridge::SetFloatParameter(unsigned int dwIndex, float value)
 	}
 
 	// send parameters data via OSC to client application
+	string address = string("/") + spoutName;
+	
 	osc::OutboundPacketStream packet(oscBuffer, OUTPUT_BUFFER_SIZE);
-
-	packet << osc::BeginBundleImmediate
-		<< osc::BeginMessage("/test1")
-		<< true << 23 << moveX << moveY << rotate << "hello" << osc::EndMessage
-		<< osc::BeginMessage("/test2")
-		<< true << 24 << (float)10.8 << "world" << osc::EndMessage
-		<< osc::EndBundle;
+	packet << osc::BeginMessage(address.c_str()) << moveX << moveY << rotate << osc::EndMessage;
 
 	transmitSocket.Send(packet.Data(), packet.Size());
 

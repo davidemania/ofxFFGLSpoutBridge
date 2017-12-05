@@ -64,7 +64,7 @@
 #include "ip/UdpSocket.h"
 
 #define OSC_ADDRESS "127.0.0.1"
-#define OSC_PORT 7000
+#define OSC_PORT 7251
 
 #define OUTPUT_BUFFER_SIZE 1024
 

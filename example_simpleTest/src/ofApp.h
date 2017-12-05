@@ -30,7 +30,11 @@ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 #pragma once
 
 #include "ofMain.h"
+#include "ofxOsc.h"
 #include "ofxFFGLSpoutBridge.h"
+
+// Important: if you get errors from ofxOsc addon complaining about missing headers
+// remove the "ofxOsc/libs/oscpack/src/ip/posix" directory from your project
 
 class ofApp : public ofBaseApp
 {
@@ -43,8 +47,12 @@ public:
 
 private:
 	ofxFFGLSpoutBridge spoutBridge;
+	string shareName;
+
+	ofxOscReceiver oscReceiver;
 
 	float currentHue;
-
 	ofTrueTypeFont font;
+
+	float currentParameterX, currentParameterY, currentParameterRotate;
 };
