@@ -1,0 +1,117 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\src\ofxFFGLSpoutBridge.cpp">
+			<Filter>addons\ofxFFGLSpoutBridge\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutCopy.cpp">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutDirectX.cpp">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutGLDXinterop.cpp">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutGLextensions.cpp">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutMemoryShare.cpp">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutReceiver.cpp">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSDK.cpp">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSender.cpp">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSenderMemory.cpp">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSenderNames.cpp">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSharedMemory.cpp">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons">
+			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFFGLSpoutBridge">
+			<UniqueIdentifier>{F6939A6C-14D3-3AAD-7460-869C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFFGLSpoutBridge\src">
+			<UniqueIdentifier>{092C9149-2FFA-C10D-CE52-719A}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFFGLSpoutBridge\libs">
+			<UniqueIdentifier>{E75116DD-99F1-2D09-3A33-4C2D}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxFFGLSpoutBridge\libs\spoutSDK">
+			<UniqueIdentifier>{27FB58AE-021F-7AD4-9836-3799}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\src\ofxFFGLSpoutBridge.h">
+			<Filter>addons\ofxFFGLSpoutBridge\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\Spout.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutCommon.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutCopy.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutDirectX.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutGLDXinterop.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutGLextensions.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutMemoryShare.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutReceiver.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSDK.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSender.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSenderMemory.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSenderNames.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\addons\ofxFFGLSpoutBridge\libs\spoutSDK\SpoutSharedMemory.h">
+			<Filter>addons\ofxFFGLSpoutBridge\libs\spoutSDK</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc" />
+	</ItemGroup>
+</Project>
