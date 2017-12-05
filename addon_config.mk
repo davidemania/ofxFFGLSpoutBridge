@@ -19,7 +19,7 @@ meta:
 	ADDON_DESCRIPTION = Use OpenFrameworks as an FFGL Plugin via Spout!
 	ADDON_AUTHOR = @Davide Manià
 	ADDON_TAGS = "addon" "FFGL" "Spout"
-	ADDON_URL = http://github.com/yournamehere/ofxAddonTemplate
+	ADDON_URL = http://github.com/davidemania/ofxFFGLSpoutBridge
 
 common:
 	# dependencies with other addons, a list of them separated by spaces 
