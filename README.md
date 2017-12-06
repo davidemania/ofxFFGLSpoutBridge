@@ -44,6 +44,8 @@ This addon has been tested on Windows 10, Visual Studio 2017 Community edition a
 
 An OSX version using Syphon would be interesting, but at the moment I don't have time to investigate its feasibility.
 
+Note: the openFrameworks app can be built either using 32 bits or 64 bits architecture, according to your taste, but the FFGL plugin must be 32 bits for Arena up to 5 and 64 bits for Arena 6 (and higher). For other hosts check the host documentation or just try and see which one works.
+
 Known issues
 ------------
 The OSC link currently is only directed from Host to Client. It would be easy enough to add support for the other direction, but it's not there yet.
